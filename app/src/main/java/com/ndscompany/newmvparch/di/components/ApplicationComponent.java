@@ -1,5 +1,6 @@
 package com.ndscompany.newmvparch.di.components;
 
+import com.ndscompany.newmvparch.eventbus.EventBusController;
 import com.ndscompany.newmvparch.managers.DataManager;
 
 import javax.inject.Singleton;
@@ -10,4 +11,5 @@ import dagger.Component;
 @Component
 public interface ApplicationComponent {
     DataManager datamanager();
+    EventBusController eventBusController();
 }
